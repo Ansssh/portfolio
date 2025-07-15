@@ -7,20 +7,24 @@ import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
     return (
+        <div className='h-screen w-screen overflow-hidden'>
+            
+        
         <ThemeProvider>
             <Router>
-                <Header/>
+                <Header />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     {/* <Route path="/skills" element={<SkillsPage />} />
-                <Route path="/projects" element={<ProjectsPage />} />
-                <Route path="/experience" element={<ExperiencePage />} />
-                <Route path="/education" element={<EducationPage />} />
-                <Route path="/resume" element={<ResumePage />} /> */}
+                    <Route path="/projects" element={<ProjectsPage />} />
+                    <Route path="/experience" element={<ExperiencePage />} />
+                    <Route path="/education" element={<EducationPage />} />
+                    <Route path="/resume" element={<ResumePage />} /> */}
                 </Routes>
-                <Footer/>
+                <Footer />
             </Router>
         </ThemeProvider>
+        </div>
     );
 }
 
