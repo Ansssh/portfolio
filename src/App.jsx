@@ -1,15 +1,27 @@
-import { useState, useEffect } from "react"
-import Header from "./components/Header"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import HomePage from './pages/home'
+import Footer from './components/Footer';
+import { ThemeProvider } from './context/ThemeContext';
 
-export default function App() {
-    const [theme, setTheme] = useState("light")
+
+function App() {
     return (
-        <div className={`h-screen w-screen overflow-hidden ${theme === 'dark' ? "bg-gray-600" : ""}`}>
-            <Header theme={theme} setTheme={setTheme} />
-
-            <footer className={`fixed bottom-0 left-1/2 -translate-x-1/2 italic font-bold text-[10px] sm:text-[11px] md:text-[12px] ${theme === 'dark' ? "text-gray-200": "text-gray-500"}`}>Jack of All Trades, Master of None</footer>
-
-        </div>
-
-    )
+        <ThemeProvider>
+            <Router>
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    {/* <Route path="/skills" element={<SkillsPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/experience" element={<ExperiencePage />} />
+                <Route path="/education" element={<EducationPage />} />
+                <Route path="/resume" element={<ResumePage />} /> */}
+                </Routes>
+                <Footer/>
+            </Router>
+        </ThemeProvider>
+    );
 }
+
+export default App
