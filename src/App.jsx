@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
 
-import HomePage from './pages/Home.jsx';
+import Home from './pages/Home.jsx';
 import EducationPage from './pages/Education.jsx';
 import SkillsPage from './pages/Skills.jsx';
 import ProjectsPage from "./pages/Projects.jsx";
@@ -18,7 +18,7 @@ function App() {
                 <Router>
                     <Header />
                     <Routes>
-                        <Route path="/" element={<HomePage />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/skills" element={<SkillsPage />} />
                         <Route path="/projects" element={<ProjectsPage />} />
                         <Route path="/experience" element={<ExperiencePage />} />
