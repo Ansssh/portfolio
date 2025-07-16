@@ -66,7 +66,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`md:flex hidden h-15 items-center justify-between gap-3 px-30 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-400"} transition duration-250 ease-in-out shadow-lg`}>
+            <header className={`md:flex hidden h-15 items-center justify-between gap-3 px-30 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-400"} transition duration-500 ease-in-out shadow-lg`}>
                 <Link to="/" className="flex items-center gap-1 cursor-pointer">
                     <i className="ri-code-s-slash-line pt-[2px] font-bold"></i>
                     <span className="font-bold">Ansh Kumar</span>
