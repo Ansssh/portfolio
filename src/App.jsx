@@ -3,12 +3,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
 
-import HomePage from './pages/Home';
-import EducationPage from './pages/Education';
-import SkillsPage from './pages/Skills';
-import ProjectsPage from "./pages/Projects";
-import ExperiencePage from './pages/Experience';
-import ResumePage from './pages/Resume';
+import HomePage from './pages/Home.jsx';
+import EducationPage from './pages/Education.jsx';
+import SkillsPage from './pages/Skills.jsx';
+import ProjectsPage from "./pages/Projects.jsx";
+import ExperiencePage from './pages/Experience.jsx';
+import ResumePage from './pages/Resume.jsx';
 
 
 function App() {
