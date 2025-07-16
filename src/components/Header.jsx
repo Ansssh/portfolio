@@ -66,7 +66,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`md:flex hidden h-15 items-center justify-between gap-3 px-30 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-400"} transition duration-500 ease-in-out shadow-lg`}>
+            <header className={`md:flex hidden h-15 items-center justify-between gap-3 px-30 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-400"} transition duration-250 ease-in-out shadow-lg`}>
                 <Link to="/" className="flex items-center gap-1 cursor-pointer">
                     <i className="ri-code-s-slash-line pt-[2px] font-bold"></i>
                     <span className="font-bold">Ansh Kumar</span>
@@ -99,7 +99,7 @@ const Header = () => {
                 </div>
             </header>
 
-            <header className={`md:hidden flex h-15 items-center justify-between gap-3 px-10 sm:px-30 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-400"} transition duration-500 ease-in-out shadow-lg`}>
+            <header className={`md:hidden flex h-15 items-center justify-between gap-3 px-10 sm:px-30 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-400"} transition duration-250 ease-in-out shadow-lg`}>
                 <Link to="/" className="flex items-center gap-1 cursor-pointer">
                     <i className="ri-code-s-slash-line pt-[2px] font-bold"></i>
                 </Link>
@@ -114,7 +114,7 @@ const Header = () => {
             </header>
             <div
                 ref={sideMenuRef}
-                className={`fixed top-15 z-50 h-screen w-50 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-200"} transition duration-500 ease-in-out`}
+                className={`fixed top-15 z-50 h-screen w-50 ${theme === "dark" ? "bg-gray-700 text-white" : "bg-gradient-to-r from-white to-gray-200"} transition duration-250 ease-in-out`}
                 style={{ left: '-100%' }}
             >
                 <div className='p-4'>
