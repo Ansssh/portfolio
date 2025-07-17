@@ -31,7 +31,7 @@ const Resume = () => {
 				download="Lord Ansh Kumar"
 				className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-gray-300 hover:bg-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-300 ease-in-out gap-2"
 			>
-				<i class="ri-download-cloud-2-line pt-[2px]"></i>
+				<i className="ri-download-cloud-2-line pt-[2px]"></i>
 				Download CV
 			</a>
 			<Document file={pdf} className="flex mt-10 mb-10">
@@ -43,7 +43,7 @@ const Resume = () => {
 				download="Lord Ansh Kumar"
 				className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-gray-300 hover:bg-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-300 ease-in-out gap-2"
 			>
-				<i class="ri-download-cloud-2-line pt-[2px]"></i>
+				<i className="ri-download-cloud-2-line pt-[2px]"></i>
 				Download CV
 			</a>
 		</div>
