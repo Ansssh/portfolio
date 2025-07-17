@@ -35,7 +35,7 @@ const Hamburger = ({ theme, setAnimationActive, animationActive }) => {
     }
 
     return (
-        <div ref={ham} className='w-4 h-5 relative flex flex-col items-center justify-evenly' onClick={handleClick}>
+        <div ref={ham} className='w-4 h-[20.4px] flex flex-col items-center justify-evenly' onClick={handleClick}>
             <div ref={div1} className={`w-full h-[2px] ${theme === 'dark' ? "bg-white" : "bg-black"} rounded-full`}></div>
             <div ref={div2} className={`w-full h-[2px] ${theme === 'dark' ? "bg-white" : "bg-black"} rounded-full`}></div>
             <div ref={div3} className={`w-full h-[2px] ${theme === 'dark' ? "bg-white" : "bg-black"} rounded-full`}></div>

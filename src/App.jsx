@@ -14,10 +14,11 @@ import HomePage from './pages/HomePage.jsx';
 
 function App() {
     return (
-        <div className='w-screen'>
+        <div className='flex flex-col h-screen'>
             <ThemeProvider>
                 <Router>
                     <Header />
+                    <main className='flex flex-1'>
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/skills" element={<SkillsPage />} />
@@ -26,8 +27,9 @@ function App() {
                         <Route path="/education" element={<EducationPage />} />
                         <Route path="/resume" element={<ResumePage />} />
                     </Routes>
-                    <Footer />
+                    </main>
                 </Router>
+                    <Footer />
             </ThemeProvider>
         </div>
     );
