@@ -19,17 +19,17 @@ function App() {
                 <Router>
                     <Header />
                     <main className='flex flex-1'>
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/skills" element={<SkillsPage />} />
-                        <Route path="/projects" element={<ProjectsPage />} />
-                        <Route path="/experience" element={<ExperiencePage />} />
-                        <Route path="/education" element={<EducationPage />} />
-                        <Route path="/resume" element={<ResumePage />} />
-                    </Routes>
+                        <Routes>
+                            <Route path="/" element={<HomePage />} />
+                            <Route path="/skills" element={<SkillsPage />} />
+                            <Route path="/projects" element={<ProjectsPage />} />
+                            <Route path="/experience" element={<ExperiencePage />} />
+                            <Route path="/education" element={<EducationPage />} />
+                            <Route path="/resume" element={<ResumePage />} />
+                        </Routes>
                     </main>
                 </Router>
-                    <Footer />
+                <Footer />
             </ThemeProvider>
         </div>
     );

@@ -4,10 +4,14 @@ import { ThemeContext } from '../context/ThemeContext'
 const HomePage = () => {
 const {theme} = useContext(ThemeContext)
     return (
-        <div className={`sm:pl-30 sm:pr-30 flex flex-col pt-10 sm:pt-15 items-center sm:items-start gap-5 ${theme === "dark" ? "bg-gray-900" : ""} transition-all duration-300 ease-in`}>
+        <div className={`w-screen sm:pl-30 sm:pr-30 flex flex-col pt-10 sm:pt-15 items-center sm:items-start gap-5 ${theme === "dark" ? "bg-gray-900" : ""} transition-all duration-300 ease-in`}>
             <img src="/me.jpg" alt="Portrait of Ansh Kumar" className='sm:h-40 sm:w-40 md:h-50 md:w-50 h-30 w-30 object-cover object-[10%_20%] rounded-full'/>
             <p className={`font-extralight text-4xl ${theme === "dark" ? "text-white": "text-black"}`}>Who's Ansh?</p>
-            <p className={`${theme === "dark" ? "text-white": "text-black"} pl-10 pr-10 text-center sm:text-left sm:pl-0 sm:pr-30`}>Ansh is a nice guy who develops websites, builds some logic and sleeps like a baby.</p>
+            <p className={`${theme === "dark" ? "text-white": "text-black"} pl-10 pr-10 text-center sm:text-left sm:pl-0 sm:pr-30`}>
+                Ansh is a nice guy who develops websites, builds some logic and sleeps like a baby.
+                <br />
+                
+            </p>
             <div className={`flex text-2xl gap-1 ${theme === "dark" ? "text-white": "text-black"}`}>
                 <a href="https://github.com/Ansssh" target='_blank'><i className="ri-github-fill"></i></a>
                 <a href="https://www.linkedin.com/in/anshhhhh/" target='_blank'><i className="ri-linkedin-box-fill"></i></a>

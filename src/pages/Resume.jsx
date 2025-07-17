@@ -25,10 +25,27 @@ const Resume = () => {
 	console.log(width)
 
 	return (
-		<div className={`relative flex flex-1 justify-center ${theme === "dark" ? "bg-gray-900" : ""} transition-all duration-300 ease-in`}>
-			<Document file={pdf} className="flex mt-10 mb-10 self-start">
-				<Page pageNumber={1} width={Math.min(width * 0.8, 500)}/>
+		<div className={`relative flex flex-col items-center flex-1 justify-center ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gradient-to-tr from-white to-gray-400 text-black"} transition-all duration-300 ease-in pt-10 pb-10`}>
+			<a
+				href={pdf}
+				download="Lord Ansh Kumar"
+				className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-gray-300 hover:bg-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-300 ease-in-out gap-2"
+			>
+				<i class="ri-download-cloud-2-line pt-[2px]"></i>
+				Download CV
+			</a>
+			<Document file={pdf} className="flex mt-10 mb-10">
+				<Page pageNumber={1} width={Math.min(width * 0.75, 700)} />
 			</Document>
+
+			<a
+				href={pdf}
+				download="Lord Ansh Kumar"
+				className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-gray-300 hover:bg-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-300 ease-in-out gap-2"
+			>
+				<i class="ri-download-cloud-2-line pt-[2px]"></i>
+				Download CV
+			</a>
 		</div>
 	)
 }
