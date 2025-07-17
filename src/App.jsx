@@ -14,7 +14,7 @@ import HomePage from './pages/HomePage.jsx';
 
 function App() {
     return (
-        <div className='h-screen w-screen overflow-x-hidden no-'>
+        <div className='w-screen'>
             <ThemeProvider>
                 <Router>
                     <Header />
