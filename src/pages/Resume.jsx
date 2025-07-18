@@ -25,7 +25,7 @@ const Resume = () => {
 	console.log(width)
 
 	return (
-		<div className={`relative flex flex-col items-center flex-1 justify-center ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gradient-to-tr from-white to-gray-400 text-black"} transition-all duration-300 ease-in pt-10 pb-10`}>
+		<div className={`relative flex flex-col items-center flex-1  ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gradient-to-tr from-white to-gray-400 text-black"} transition-all duration-300 ease-in pt-10 pb-10`}>
 			<a
 				href={pdf}
 				download="Lord Ansh Kumar"
@@ -34,7 +34,7 @@ const Resume = () => {
 				<i className="ri-download-cloud-2-line pt-[2px]"></i>
 				Download CV
 			</a>
-			<Document file={pdf} className="flex mt-10 mb-10">
+			<Document file={pdf} className="flex mt-5 mb-5">
 				<Page pageNumber={1} width={Math.min(width * 0.75, 700)} />
 			</Document>
 
