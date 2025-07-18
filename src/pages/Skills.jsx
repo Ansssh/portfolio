@@ -39,7 +39,7 @@ const Skills = () => {
                     <Rating className='max-w-20 pt-1' value={rating} readOnly={true}></Rating>
                 </div>
                 {
-                    text === "Express.js" ? (<Express stroke={`${theme === "dark" ? "white" : "black"}`} fill={`${theme === "dark" ? "white" : "black"}`}/>):(<img src={image} alt="Nom-Nom" className={`object-contain ${theme === "dark" ? "mask-gradient-to-r": ""}`}/>)
+                    text === "Express.js" ? (<Express stroke={`${theme === "dark" ? "white" : "black"}`} fill={`${theme === "dark" ? "white" : "black"}`} className={`object-contain mask-gradient-to-r`}/>):(<img src={image} alt="Nom-Nom" className={`object-contain ${theme === "dark" ? "mask-gradient-to-r": ""}`}/>)
                 }
                 {/* <img src={image} alt="Nom-Nom" className={`object-contain ${theme === "dark" ? "mask-gradient-to-r": ""}`}/> */}
             </div>
