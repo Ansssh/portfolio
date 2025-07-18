@@ -4,7 +4,7 @@ import { ThemeContext } from "../context/ThemeContext"
 import java from '../assets/java-icon.svg'
 import python from '../assets/python-icon.svg'
 import docker from '../assets/docker-icon.svg'
-import express from '../assets/expressjs-icon.svg'
+import Express from '../assets/expressjs-icon.svg?react'
 import git from '../assets/git-scm-icon.svg'
 import js from '../assets/javascript-icon.svg'
 import node from '../assets/nodejs-icon.svg'
@@ -38,7 +38,10 @@ const Skills = () => {
                     <p className='text-xl font-bold'>{text}</p>
                     <Rating className='max-w-20 pt-1' value={rating} readOnly={true}></Rating>
                 </div>
-                <img src={image} alt="Nom-Nom" className={`object-contain ${theme === "dark" ? "mask-gradient-to-r": ""}`}/>
+                {
+                    text === "Express.js" ? (<Express stroke={`${theme === "dark" ? "white" : "black"}`} fill={`${theme === "dark" ? "white" : "black"}`}/>):(<img src={image} alt="Nom-Nom" className={`object-contain ${theme === "dark" ? "mask-gradient-to-r": ""}`}/>)
+                }
+                {/* <img src={image} alt="Nom-Nom" className={`object-contain ${theme === "dark" ? "mask-gradient-to-r": ""}`}/> */}
             </div>
         )
     }
@@ -63,7 +66,7 @@ const Skills = () => {
             <div className='flex flex-wrap w-screen px-10 sm:px-30 gap-3'>
                 <CardWithImage text={"React.js"} image={reac} rating={4}></CardWithImage>
                 <CardWithImage text={"Node.js"} image={node} rating={3.5}></CardWithImage>
-                <CardWithImage text={"Express.js"} image={express} rating={2.5}></CardWithImage>
+                <CardWithImage text={"Express.js"} rating={2.5}></CardWithImage>
             </div>
             <LineWithText text={"Others"}></LineWithText>
             <div className='flex flex-wrap w-screen px-10 sm:px-30 gap-3'>

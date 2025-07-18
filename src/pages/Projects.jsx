@@ -161,7 +161,7 @@ const Projects = () => {
                     {project.skills.map((skill, index) => (
                             <React.Fragment key={index}>
                                 {skill.name === "Express" ? (
-                                    <Express stroke={`${theme === "dark" ? "white" : "black"}`} className="w-6 h-6" />
+                                    <Express stroke={`${theme === "dark" ? "white" : "black"}`} fill={`${theme === "dark" ? "white" : "black"}`} className="w-6 h-6" />
                                 ) : (
                                     <img src={skill.image} alt={skill.name} className='h-6' />
                                 )}
