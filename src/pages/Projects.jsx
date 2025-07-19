@@ -148,7 +148,7 @@ const Projects = () => {
                     <div className='flex flex-wrap gap-2 cursor-default items-center'>
                         {project.soft.length > 0 ? (
                             project.soft.map((skill, index) => (
-                                <div key={index} className='text-[10px] border-1 border-gray-400 px-2 pb-[1px] hover:bg-gray-700 active:bg-transparent rounded-2xl'>{skill}</div>
+                                <div key={index} className={`text-[10px] border-1 text-center flex items-center justify-center pb-[0.5px] border-gray-400 px-2  ${theme === "dark" ? "active:bg-transparent hover:bg-gray-700":"active:bg-gray-300 hover:bg-gray-300"}  rounded-2xl`}>{skill}</div>
                             ))
                         ) : (
                             <div></div>
