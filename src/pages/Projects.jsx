@@ -148,7 +148,7 @@ const Projects = () => {
                     <div className='flex flex-wrap gap-2 cursor-default items-center'>
                         {project.soft.length > 0 ? (
                             project.soft.map((skill, index) => (
-                                <div key={index} className={`text-[10px] border-1 text-center flex items-center justify-center pb-[0.5px] border-gray-400 px-2  ${theme === "dark" ? "active:bg-transparent hover:bg-gray-700":"active:bg-gray-300 hover:bg-gray-300"}  rounded-2xl`}>{skill}</div>
+                                <div key={index} className={`text-[10px] border-1 text-center flex items-center justify-center pb-[0.5px] border-gray-400 px-2  ${theme === "dark" ? "active:bg-transparent hover:bg-gray-700":"active:bg-gray-300 hover:bg-gray-300"}  rounded-2xl select-none`}>{skill}</div>
                             ))
                         ) : (
                             <div></div>
@@ -175,7 +175,7 @@ const Projects = () => {
     }
 
     return (
-        <div className={`flex flex-col gap-2 items-center justify-center overflow-auto w-screen ${theme === "dark" ? "bg-gray-900 text-white" : ""} transition-all duration-300 ease-in-out pb-6 px-10 sm:px-30`}>
+        <div className={`flex flex-col gap-2 items-center overflow-auto w-screen ${theme === "dark" ? "bg-gray-900 text-white" : ""} transition-all duration-300 ease-in-out pb-6 px-10 sm:px-30`}>
             <h1 className='text-4xl font-bold mt-5'>Projects</h1>
             <p className='text-sm font-light'>~Ansh Kumar~</p>
             <div className='flex flex-row gap-2 flex-wrap mt-2 w-full'>
