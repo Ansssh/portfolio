@@ -81,12 +81,12 @@ export default function HireMe() {
             const publicKey = import.meta.env.VITE_PUBLIC_KEY;
             emailjs.send(serviceId, templateId, formData, publicKey)
                 .then((response) => {
-                    console.log('Email sent successfully!', response.status, response.text);
+                    // console.log('Email sent successfully!', response.status, response.text);
                     localStorage.setItem("G^#1)0L", true)
                     setStep(3);
                 })
                 .catch((err) => {
-                    console.error('Failed to send email. Error: ', err);
+                    // console.error('Failed to send email. Error: ', err);
                     alert('There was an error sending your message. Please try again later.');
                 });
 

@@ -46,8 +46,8 @@ const Skills = () => {
         )
     }
     return (
-        <div className={`w-screen flex flex-col items-center pb-10 ${theme === 'dark' ? "bg-gray-900 text-white" : ""} transition-all duration-300 ease-in-out`}>
-            <h1 className='text-4xl font-bold mt-5'>Skills</h1>
+        <div className={`flex flex-col flex-1 items-center pb-10 ${theme === 'dark' ? "bg-gray-900 text-white" : ""} transition-all duration-300 ease-in-out`}>
+            <h1 className='text-4xl font-bold mt-5 mb-2'>Skills</h1>
             <p className='text-sm font-light'>~Ansh Kumar~</p>
             <LineWithText text={"Programming Languages"} />
             <div className='flex flex-wrap w-screen px-10 sm:px-30 gap-3'>
