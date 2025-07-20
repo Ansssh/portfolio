@@ -27,8 +27,8 @@ const JobCard = React.memo(function JobCard({ jobDetails, index }) {
         setShowFullDescription(!showFullDescription);
     }
     return (
-        <div className={`${theme === "dark" ? "bg-gray-800 text-white" : `bg-gradient-to-r ${index % 2 === 0 ? "from-gray-100 to-gray-200" : "from-gray-200 to-gray-100"}`} flex flex-col border rounded-lg p-4`}>
-            <div className={`flex justify-between items-center ${index % 2 === 0 ? "" : "lg:flex-row-reverse"} flex-wrap`}>
+        <div className={`${theme === "dark" ? "bg-gray-800 text-white" : `bg-gradient-to-r ${index % 2 === 0 ? "from-gray-100 to-gray-200" : "from-gray-200 to-gray-100"}`} flex flex-col border rounded-lg  p-4`}>
+            <div className={`flex flex-col`}>
                 <p className='text-lg sm:text-lg font-bold'>{jobDetails.title}</p>
                 <p className='text-sm sm:text-md font-light italic'>{jobDetails.duration}</p>
             </div>
