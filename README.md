@@ -18,9 +18,18 @@ This Portfolio website features my github Projects as well as my resume and tech
 - **Vite** - *Structure*
 - **Tailwind V4** - *Styling*
 - **Visual Studio Code** - *IDE*
-- **Remixicon** - *Icons*
-- **GSAP** - *Animations*
-- **Vercel** - *Deployment*
+
+#### Additional Plugins, Libraries and Websites used
+
+- [**Remixicon**](https://remixicon.com/) - *Icons*
+- [**Iconify**](https://icon-sets.iconify.design/) - *Icons - II*
+- [**Vercel**](https://vercel.com/) - *Deployment*
+- [**GSAP**](https://gsap.com/) - *Animations*
+- [**Email.js**](https://emailjs.com/) - *Email Services*
+- [**Vector Logo Zone**](https://www.vectorlogo.zone/) - *Logos*
+- [**Logo Search**](https://logosear.ch/) - *Logos - II*
+- [**Material UI**](https://mui.com/) - *Timeline UI - Experience Section*
+
 
 ### Features
 

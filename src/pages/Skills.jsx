@@ -22,11 +22,11 @@ const Skills = () => {
     function LineWithText({ text }) {
         return (
             <div className='flex items-center relative w-screen my-5'>
-                <div className="w-8 sm:w-28 border-t border-gray-600 -mb-1"></div>
+                <div className="w-8 sm:w-28 border-t border-gray-600"></div>
                 <span className="mx-2 text-gray-400 font-medium">
                     {text}
                 </span>
-                <div className="flex-grow-[8] border-1 border-gray-600 -mb-1"></div>
+                <div className="flex-grow-[8] border-1 border-gray-600"></div>
             </div>
         )
     }
