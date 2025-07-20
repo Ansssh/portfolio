@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
-import ProjectCard from '../components/ProjectCard';
 
 // MUI Imports
 import Timeline from '@mui/lab/Timeline';
