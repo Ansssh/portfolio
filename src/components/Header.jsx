@@ -91,7 +91,7 @@ const Header = () => {
                     </NavLink> */}
                     <NavLink to="/resume" className={({ isActive }) => `flex gap-1 items-center text-lg rounded-2xl p-4 ${theme === 'dark' ? "hover:text-black hover:bg-gray-300" : "hover:bg-gray-100"} pt-2 pb-2 cursor-pointer ${isActive ? (theme === 'dark' ? 'text-black bg-gray-300' : 'bg-gray-200') : ''}`}>
                         <i className="ri-survey-line text-lg lg:text-sm pt-[2px]"></i>
-                        <span className="hidden lg:block text-sm font-semibold">Resume</span>
+                        <span className="hidden lg:block text-sm font-semibold">Resumé</span>
                     </NavLink>
                 </div>
                 <div>
@@ -123,7 +123,7 @@ const Header = () => {
                         <li><NavLink to="/projects" className={({ isActive }) => `block py-2 px-3 rounded-md hover:bg-gray-100 ${theme === 'dark' ? "hover:text-black active:bg-gray-600 active:text-gray-200" : "active:bg-gray-200"} transition-colors duration-100 ${isActive ? (theme === 'dark' ? 'text-black bg-gray-300' : 'bg-gray-200') : ''}`} onClick={handleMenuItemClick}><i className="ri-box-3-line text-lg lg:text-sm pt-[2px] ml-3 mr-2"></i>Projects</NavLink></li>
                         <li><NavLink to="/experience" className={({ isActive }) => `block py-2 px-3 rounded-md hover:bg-gray-100 ${theme === 'dark' ? "hover:text-black active:bg-gray-600 active:text-gray-200" : "active:bg-gray-200"} transition-colors duration-100 ${isActive ? (theme === 'dark' ? 'text-black bg-gray-300' : 'text-black bg-gray-200') : ''}`} onClick={handleMenuItemClick}><i className="ri-focus-2-line text-lg lg:text-sm pt-[2px] ml-3 mr-2"></i>Experience</NavLink></li>
                         {/* <li><NavLink to="/education" className={({ isActive }) => `block py-2 px-3 rounded-md hover:bg-gray-100 ${theme === 'dark' ? "hover:text-black active:bg-gray-600 active:text-gray-200" : "active:bg-gray-200"} transition-colors duration-100 ${isActive ? (theme === 'dark' ? 'text-black bg-gray-300' : 'text-black bg-gray-200') : ''}`} onClick={handleMenuItemClick}><i className="ri-graduation-cap-line text-lg lg:text-sm pt-[2px] ml-3 mr-2"></i>Education</NavLink></li> */}
-                        <li><NavLink to="/resume" className={({ isActive }) => `block py-2 px-3 rounded-md hover:bg-gray-100 ${theme === 'dark' ? "hover:text-black active:bg-gray-600 active:text-gray-200" : "active:bg-gray-200"} transition-colors duration-100 ${isActive ? (theme === 'dark' ? 'text-black bg-gray-300' : 'text-black bg-gray-200') : ''}`} onClick={handleMenuItemClick}><i className="ri-survey-line text-lg lg:text-sm pt-[2px] ml-3 mr-2"></i>Resume</NavLink></li>
+                        <li><NavLink to="/resume" className={({ isActive }) => `block py-2 px-3 rounded-md hover:bg-gray-100 ${theme === 'dark' ? "hover:text-black active:bg-gray-600 active:text-gray-200" : "active:bg-gray-200"} transition-colors duration-100 ${isActive ? (theme === 'dark' ? 'text-black bg-gray-300' : 'text-black bg-gray-200') : ''}`} onClick={handleMenuItemClick}><i className="ri-survey-line text-lg lg:text-sm pt-[2px] ml-3 mr-2"></i>Resumé</NavLink></li>
                         <li>
                             <div className={`flex items-center mt-4 py-2 pl-6 rounded-md ${theme === 'dark' ? "active:text-gray-200 active:bg-gray-600" : "active:text-gray-600 active:bg-gray-200"}`}>
                                 {theme === 'light' ?

@@ -12,7 +12,7 @@ Feel free to fork this repository and make it your own! If you do, please rememb
 
 ## Technologies used
 
-This Portfolio website features my github Projects as well as my resume and technical skills. The Technologies used in building this project are - 
+This Portfolio website features my github Projects as well as my resumé and technical skills. The Technologies used in building this project are - 
 
 - **React.js** - *Logic*
 - **Vite** - *Structure*

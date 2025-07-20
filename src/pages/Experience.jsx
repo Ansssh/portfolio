@@ -125,7 +125,9 @@ const Experience = () => {
     return (
         <>
             {/* Mobile View */}
-            <div className={`flex lg:hidden flex-1 ${theme === "dark" ? "bg-gray-800 text-white" : "bg-gray-100"} py-10 px-10 sm:px-30`}>
+            <div className={`flex flex-col items-center lg:hidden flex-1 ${theme === "dark" ? "bg-gray-800 text-white" : "bg-gray-100"} py-10 px-10 sm:px-30`}>
+                <h1 className='text-4xl font-bold mt-5'>Projects</h1>
+                <p className='text-sm font-light'>~Ansh Kumar~</p>
                 <Timeline
                     sx={{
                         [`& .${timelineItemClasses.root}:before`]: { flex: 0, padding: 0 },
@@ -137,7 +139,9 @@ const Experience = () => {
             </div>
 
             {/* Desktop View */}
-            <div className={`lg:flex hidden flex-1 ${theme === "dark" ? "bg-gray-800 text-white" : "bg-gray-100"} py-10 px-10 sm:px-30`}>
+            <div className={`lg:flex flex-col items-center gap-2 hidden flex-1 ${theme === "dark" ? "bg-gray-800 text-white" : "bg-gray-100"} pt-0 py-10 px-10 sm:px-30`}>
+                <h1 className='text-4xl font-bold mt-5'>Experience</h1>
+                <p className='text-sm font-light'>~Ansh Kumar~</p>
                 <Timeline position='alternate' sx={{ padding: 0 }}>
                     {/* 3. Render the exact same list again */}
                     {timelineItems}
