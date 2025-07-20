@@ -29,7 +29,7 @@ const JobCard = React.memo(function JobCard({ jobDetails, index }) {
     return (
         <div className={`${theme === "dark" ? "bg-gray-800 text-white" : `bg-gradient-to-r ${index % 2 === 0 ? "from-gray-100 to-gray-200" : "from-gray-200 to-gray-100"}`} flex flex-col border rounded-lg p-4`}>
             <div className={`flex justify-between items-center ${index % 2 === 0 ? "" : "lg:flex-row-reverse"} flex-wrap`}>
-                <p className='text-sm sm:text-lg font-bold'>{jobDetails.title}</p>
+                <p className='text-lg sm:text-lg font-bold'>{jobDetails.title}</p>
                 <p className='text-sm sm:text-md font-light italic'>{jobDetails.duration}</p>
             </div>
             <div className={`flex gap-2 flex-wrap ${index % 2 === 0 ? "" : "lg:justify-start lg:flex-row-reverse"} my-2`}>
